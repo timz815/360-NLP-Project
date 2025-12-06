@@ -16,6 +16,7 @@ Pipeline:
 Output: aligned_windows.jsonl
 """
 
+
 # Dependencies:
 # - sacremoses
 # - torch
@@ -117,7 +118,7 @@ def clean_subtitles(text):
 
 def ensure_terminal_punct(text: str, lang: str) -> str:
     """
-    Add a sentence punctuation mark if missing.
+    Add a sentence punctuation mark if missing
     lang = 'zh' or 'en'
     """
     en_stops = {'.', '!', '?', '…'}
